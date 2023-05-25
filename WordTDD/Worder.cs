@@ -11,16 +11,7 @@
 
         public bool IsEmpty()
         {
-            int wordCount = _word.Length;
-
-            if (wordCount == 0)
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
+            return _word.Length == 0 ? true : false;
         }
 
         public bool IsPalindrome()
