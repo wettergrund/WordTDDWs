@@ -9,6 +9,20 @@
 
         }
 
+        public bool IsEmpty()
+        {
+            int wordCount = _word.Length;
+
+            if (wordCount == 0)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
         public bool IsPalindrome()
         {
             _word = _word.Replace(" ", "");
