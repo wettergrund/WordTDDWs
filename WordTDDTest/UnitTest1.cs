@@ -11,7 +11,7 @@ namespace WordTDDTest
             string testWord = "ni talar bra latin";
             bool expected = true;
 
-             
+
             Worder myWorder = new Worder(testWord);
 
             bool actual = myWorder.IsPalindrome();
