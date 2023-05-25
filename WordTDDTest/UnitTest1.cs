@@ -20,7 +20,7 @@ namespace WordTDDTest
         }
 
         [TestMethod]
-        public void TestNotEmpty()
+        public void TestEmpty()
         {
             string testWord = "";
             bool expected = true;
@@ -30,7 +30,7 @@ namespace WordTDDTest
 
             bool actual = myWorder.IsEmpty();
 
-            Assert.AreEqual(expected, actual, "String is empty");
+            Assert.AreEqual(expected, actual);
 
         }
 
