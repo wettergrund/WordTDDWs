@@ -18,5 +18,21 @@ namespace WordTDDTest
 
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void TestNotEmpty()
+        {
+            string testWord = "";
+            bool expected = true;
+
+
+            Worder myWorder = new Worder(testWord);
+
+            bool actual = myWorder.IsEmpty();
+
+            Assert.AreEqual(expected, actual, "String is empty");
+
+        }
+
     }
 }
